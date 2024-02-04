@@ -293,6 +293,8 @@ button, a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
+  color: #000000;
 }
 @media screen and (min-width: 280px) {
   .projects .projects-heading {
