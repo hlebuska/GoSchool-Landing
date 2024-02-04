@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    font-family: "Open Sans", sans-serif !important;
+}
+
+@mixin display2XL{
+    font-weight: 650;
+    font-size: 227px;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+}
+@mixin displayXL{
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+}
+@mixin displayM{
+    font-weight: 650;
+    font-size: 84px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+@mixin heading1{
+    font-weight: 650;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+}
+@mixin heading2{
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
+@mixin heading3{
+    font-weight: 650;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+@mixin heading4{
+    font-weight: 650;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+@mixin heading5{
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+}
+@mixin heading6{
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+}
+@mixin bodyXL{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+
+}
+@mixin bodyL{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+}
+@mixin bodyM{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+}
