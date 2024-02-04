@@ -57,6 +57,10 @@ body {
   justify-content: center;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 .nav {
   width: 100%;
   min-height: 72px;
