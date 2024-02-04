@@ -5,10 +5,10 @@ body{
 }
 
 @mixin display2XL{
-    font-weight: 650;
+    font-weight: 600;
     font-size: 227px;
     line-height: 90%;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
 }
 @mixin displayXL{
     font-weight: 500;
