@@ -587,7 +587,7 @@ body {
     margin-top: 32px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .expertise .expertise-title {
     font-weight: 650;
     font-size: 48px;
@@ -623,6 +623,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .design .design-title {
   text-wrap: nowrap;
@@ -704,7 +705,7 @@ body {
     margin-top: 15px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .testimonials .testimonials-inside .testimonials-heading .testimonials-title {
     font-weight: 650;
     font-size: 64px;
@@ -779,7 +780,7 @@ body {
     height: 52px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .contact .lets-talk {
     font-weight: 500;
     font-size: 140px;
