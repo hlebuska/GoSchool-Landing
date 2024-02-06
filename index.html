@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/index.css">
+    <script defer src="scroll-animation.js"></script>
+    <script async src="theme.js"></script>
     <title>Joey - Portfolio Website</title>
 </head>
 <body>
    <div class="nav">
         <div class="nav-inside container">
-            <a class="logo"><img src="images/logo-main-mobile.svg" alt=""></a>
+            <a class="logo vector"><img src="images/logo-main-mobile.svg" alt=""></a>
             <button class="menu-button"><img src="images/mav-menu-button.svg" alt=""></button>
             <div class="menu">
                 <a href="" class="element selected">Home</a>
                 <a href="" class="element">Projects</a>
                 <a href="" class="element">About</a>
                 <a href="" class="element last">Contact</a> 
+                <a class="element last" id="dark-theme-btn">Light theme</a> 
             </div>
         </div>
    </div>
    <div class="hero">
-        <div class="hero-inside container">
+        <div class="hero-inside container hidden">
             <div class="heading">
                 <div class="title">Websites&<br>Branding</div>
-                <button class="scroll-button">SCROLL DOWN <img src="images/icon-arrow.svg" alt=""></button>
+                <a href="#email-button" class="scroll-button">SCROLL DOWN <img class="svg-white" src="images/icon-arrow.svg" alt=""></a>
             </div>
             <div class="me">
                 <div class="talk">
@@ -35,10 +38,10 @@
         </div>
    </div>
    <div class="projects">
-        <div class="projects-inside container">
+        <div class="projects-inside container hidden">
             <div class="projects-heading">
                 <div class="projects-title">Projects</div>
-                <button class="more-button">More<img src="images/icon-arrow.svg" alt=""></button>
+                <button class="more-button">More<img class="vector" src="images/icon-arrow.svg" alt=""></button>
                 <div class="projects-description">As an experienced developer of modern, intuitive websites and digital products, I want to help you build the brand of your dreams.</div>
             </div>
             <div class="projects-grid">
@@ -63,7 +66,7 @@
         </div>
    </div>
    <div class="expertise">
-        <div class="expertise-inside container">
+        <div class="expertise-inside container hidden">
             <div class="expertise-title">Expertise</div>
             <ul class="expertise-list">
                 <li class="list-element">
@@ -89,7 +92,7 @@
         <div class="design-title">Visual design for digital experiences</div>
    </div>
    <div class="testimonials">
-        <div class="testimonials-inside container">
+        <div class="testimonials-inside container hidden">
             <div class="testimonials-heading">
                 <div class="testimonials-title">Testimonials</div>
                 <div class="testimonials-description">“Joey is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I've witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”</div>
@@ -99,19 +102,21 @@
             </div>
         </div>
    </div>
-   <div class="contact container">
-        <div class="contact-inside">
+   <div class="contact">
+        <div class="contact-inside container hidden">
             <div class="lets-talk">Let’s talk!</div>
-            <button class="email-button">hello@joey.co <img src="images/icon-arrow.svg" alt=""></button>
+            <button id="email-button" class="email-button">hello@joey.co <img class="svg-white" src="images/icon-arrow.svg" alt=""></button>
         </div>
    </div>
-   <div class="footer container">
-        <div class="credits">2023 © — Made by Djectstudio</div>
-        <div class="socials">
-            <div class="dribble">Dribble</div>
-            <div class="instagram">Instagram</div>
-            <div class="linkedin">LinkedIn</div>
-         </div>
+   <div class="footer ">
+        <div class="footer-inside container">
+            <a href class="credits">2023 © — Made by Djectstudio</a>
+            <div class="socials">
+                <a href="" class="dribble">Dribble</a>
+                <a href="" class="instagram">Instagram</a>
+                <a href="" class="linkedin">LinkedIn</a>
+             </div>
+        </div>
    </div>
 </body>
 </html>

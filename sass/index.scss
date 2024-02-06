@@ -3,16 +3,32 @@
 @import 'colors';
 @import 'media-queries';
 
+*{
+    transition: color .15s, background-color .3s;
+}
+
+:root{
+   --main-text: #000000;
+   --alt-text: #ffffff;
+   --main-background: #ffffff;
+   --alt-background: #000000;
+}
 %justify-center{
     display: flex;
     justify-content: center;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 button, a{
     cursor: pointer;
+    text-decoration: none;
 }
-
+body{
+    background-color: var(--main-background);
+}
 .nav{
+    background-color: var(--main-background);
     width: 100%;
     min-height: 72px;
     display: flex;
@@ -34,7 +50,7 @@ button, a{
         .menu{
             display: none;
             margin-top: 2rem;
-            background-color: $black;
+            background-color: var(--alt-background);
             height: 56px;
             border-radius: 80px;
 
@@ -43,7 +59,7 @@ button, a{
                 flex-direction: column;
                 justify-content: space-around;
                 text-decoration: none;
-                color: $grey;
+                color: #C4C4C4;
                 padding: 0 16px;
                 border-radius: 48px;
                 margin: 4px 16px 4px 4px;
@@ -52,8 +68,8 @@ button, a{
                 margin-right: 4px;
             }
             .selected{
-                background-color: $white;
-                color: $black;
+                background-color: var(--alt-text);
+                color: #000000;
             }
         }           
     }
@@ -83,20 +99,24 @@ button, a{
 }
 
 .hero{
+    background-color: var(--main-background);
     .hero-inside{
         .heading{
             display: flex;
             align-items: center;
             width: 100%;
 
+            .title{
+                color: var(--main-text);
+            }
             .scroll-button{
                 display: flex;
                 align-self: flex-end;
                 align-items: center;
-                background-color: $light-grey;
+                background-color: var(--alt-background);
                 border-radius: 144px;
                 margin-top: 25px;
-
+                color: var(--alt-text);
                 img{
                     margin-left: 7px;
                 }
@@ -105,6 +125,15 @@ button, a{
         .me{
             display: flex;
             justify-content: space-between;
+            .me-heading{
+                color: var(--main-text);
+            }
+            .email{
+                color: var(--main-text);
+            }
+        }
+        .about{
+            color: var(--main-text);
         }
     }
     @include mobile{
@@ -200,7 +229,7 @@ button, a{
 }
 
 .projects{
-    
+    background-color: var(--main-background);
     .projects-inside{
         display: flex;
         flex-direction: column;
@@ -210,13 +239,16 @@ button, a{
             position: relative;
 
             .projects-title{
-          
+                color: var(--main-text);
             }
             .more-button{
                 background: transparent;
                 display: flex;
                 align-items: center;
-                
+                color: var(--main-text);
+            }
+            .projects-description{
+                color: var(--main-text);    
             }
         }
         .projects-grid{     
@@ -225,7 +257,7 @@ button, a{
                 flex-direction: column;
                 justify-content: space-between;
                 text-decoration: none;
-                color: $black;
+                color: var(--main-text);
             }
         }
     }
@@ -363,11 +395,13 @@ button, a{
     }
 }
 .expertise{
+    background-color: var(--main-background);
     .expertise-inside{
         .expertise-title{
-
+            color: var(--main-text);
         }
         .expertise-list{       
+            color: var(--main-text);
             display: grid;
             list-style: none;
             list-style-position: inside;         
@@ -455,7 +489,7 @@ button, a{
 }
 
 .design{  
-    background-color: $black;
+    background-color: var(--alt-background);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -464,11 +498,13 @@ button, a{
     .design-title{
         text-wrap: nowrap;
         text-align: center;
-        color: $white;
+        color: var(--alt-text);
     }
 }
 
 .testimonials{
+    background-color: var(--main-background);
+    color: var(--main-text);
     .testimonials-inside{
         display: flex;
         flex-direction: column;
@@ -538,6 +574,9 @@ button, a{
 }
 
 .contact{
+    background-color: var(--main-background);
+    width: 100%;
+    color: var(--main-text);
     .contact-inside{
         display: flex;
         flex-direction: column;
@@ -547,9 +586,16 @@ button, a{
             
         }
         .email-button{
-            color: $white;
-            background-color: $black;
+            color: var(--alt-text);
+            background-color: var(--alt-background);
             text-align: center;
+            img{
+                transform: rotate(-135deg);
+            }
+        }
+        .email-button:focus{
+            border: 2px rgb(255, 255, 255) solid;
+            outline: 2px rgb(0, 0, 0) solid;     
         }
     }
     @include mobile{
@@ -590,16 +636,21 @@ button, a{
     }
 }
 
-.footer{
+.footer-inside{
+    background-color: var(--main-background);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
     .credits{
         margin-bottom: 40px;
+        color: var(--main-text);
     }
     .socials{
         display: flex;
         .instagram, .linkedin{
-            margin-left: 40px;
+            margin-left: 40px;          
+        }
+        .instagram, .linkedin, .dribble{
+            color: var(--main-text);
         }
     }
 }
@@ -653,3 +704,20 @@ button, a{
         margin-top: 150px;
     }
 }
+
+.hidden{
+    opacity: 0;
+    transition: opacity .7s, transform .5s ease-in-out;
+    transform: translate(-50%, 0);
+}
+
+.show{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.svg-white{
+    filter: brightness(0) invert(1);
+}
+
+

@@ -52,16 +52,37 @@ body {
   font-family: "Open Sans", sans-serif !important;
 }
 
+* {
+  transition: color 0.15s, background-color 0.3s;
+}
+
+:root {
+  --main-text: #000000;
+  --alt-text: #ffffff;
+  --main-background: #ffffff;
+  --alt-background: #000000;
+}
+
 .nav .nav-inside .logo {
   display: flex;
   justify-content: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button, a {
   cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--main-background);
 }
 
 .nav {
+  background-color: var(--main-background);
   width: 100%;
   min-height: 72px;
   display: flex;
@@ -80,7 +101,7 @@ button, a {
 .nav .nav-inside .menu {
   display: none;
   margin-top: 2rem;
-  background-color: #000000;
+  background-color: var(--alt-background);
   height: 56px;
   border-radius: 80px;
 }
@@ -98,7 +119,7 @@ button, a {
   margin-right: 4px;
 }
 .nav .nav-inside .menu .selected {
-  background-color: #ffffff;
+  background-color: var(--alt-text);
   color: #000000;
 }
 @media screen and (min-width: 768px) {
@@ -125,18 +146,25 @@ button, a {
   }
 }
 
+.hero {
+  background-color: var(--main-background);
+}
 .hero .hero-inside .heading {
   display: flex;
   align-items: center;
   width: 100%;
 }
+.hero .hero-inside .heading .title {
+  color: var(--main-text);
+}
 .hero .hero-inside .heading .scroll-button {
   display: flex;
   align-self: flex-end;
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: var(--alt-background);
   border-radius: 144px;
   margin-top: 25px;
+  color: var(--alt-text);
 }
 .hero .hero-inside .heading .scroll-button img {
   margin-left: 7px;
@@ -144,6 +172,15 @@ button, a {
 .hero .hero-inside .me {
   display: flex;
   justify-content: space-between;
+}
+.hero .hero-inside .me .me-heading {
+  color: var(--main-text);
+}
+.hero .hero-inside .me .email {
+  color: var(--main-text);
+}
+.hero .hero-inside .about {
+  color: var(--main-text);
 }
 @media screen and (min-width: 280px) {
   .hero .heading {
@@ -275,6 +312,9 @@ button, a {
   }
 }
 
+.projects {
+  background-color: var(--main-background);
+}
 .projects .projects-inside {
   display: flex;
   flex-direction: column;
@@ -284,17 +324,24 @@ button, a {
   grid-template-columns: 1fr 1fr;
   position: relative;
 }
+.projects .projects-inside .projects-heading .projects-title {
+  color: var(--main-text);
+}
 .projects .projects-inside .projects-heading .more-button {
   background: transparent;
   display: flex;
   align-items: center;
+  color: var(--main-text);
+}
+.projects .projects-inside .projects-heading .projects-description {
+  color: var(--main-text);
 }
 .projects .projects-inside .projects-grid .projects-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-decoration: none;
-  color: #000000;
+  color: var(--main-text);
 }
 @media screen and (min-width: 280px) {
   .projects .projects-heading {
@@ -463,7 +510,14 @@ button, a {
   }
 }
 
+.expertise {
+  background-color: var(--main-background);
+}
+.expertise .expertise-inside .expertise-title {
+  color: var(--main-text);
+}
 .expertise .expertise-inside .expertise-list {
+  color: var(--main-text);
   display: grid;
   list-style: none;
   list-style-position: inside;
@@ -563,7 +617,7 @@ button, a {
 }
 
 .design {
-  background-color: #000000;
+  background-color: var(--alt-background);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -573,9 +627,13 @@ button, a {
 .design .design-title {
   text-wrap: nowrap;
   text-align: center;
-  color: #ffffff;
+  color: var(--alt-text);
 }
 
+.testimonials {
+  background-color: var(--main-background);
+  color: var(--main-text);
+}
 .testimonials .testimonials-inside {
   display: flex;
   flex-direction: column;
@@ -663,15 +721,27 @@ button, a {
   }
 }
 
+.contact {
+  background-color: var(--main-background);
+  width: 100%;
+  color: var(--main-text);
+}
 .contact .contact-inside {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .contact .contact-inside .email-button {
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--alt-text);
+  background-color: var(--alt-background);
   text-align: center;
+}
+.contact .contact-inside .email-button img {
+  transform: rotate(-135deg);
+}
+.contact .contact-inside .email-button:focus {
+  border: 2px rgb(255, 255, 255) solid;
+  outline: 2px rgb(0, 0, 0) solid;
 }
 @media screen and (min-width: 280px) {
   .contact .lets-talk {
@@ -728,18 +798,23 @@ button, a {
   }
 }
 
-.footer {
+.footer-inside {
+  background-color: var(--main-background);
   display: flex;
   justify-content: space-between;
 }
-.footer .credits {
+.footer-inside .credits {
   margin-bottom: 40px;
+  color: var(--main-text);
 }
-.footer .socials {
+.footer-inside .socials {
   display: flex;
 }
-.footer .socials .instagram, .footer .socials .linkedin {
+.footer-inside .socials .instagram, .footer-inside .socials .linkedin {
   margin-left: 40px;
+}
+.footer-inside .socials .instagram, .footer-inside .socials .linkedin, .footer-inside .socials .dribble {
+  color: var(--main-text);
 }
 
 .container {
@@ -799,4 +874,18 @@ button, a {
     flex-direction: row;
     margin-top: 150px;
   }
+}
+.hidden {
+  opacity: 0;
+  transition: opacity 0.7s, transform 0.5s ease-in-out;
+  transform: translate(-50%, 0);
+}
+
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.svg-white {
+  filter: brightness(0) invert(1);
 }/*# sourceMappingURL=index.css.map */
