@@ -230,7 +230,7 @@ button, a {
     text-align: end;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .hero .heading {
     margin-top: 50px;
     flex-direction: row;
@@ -409,7 +409,7 @@ button, a {
     letter-spacing: -0.01em;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .projects {
     margin-top: 150px;
   }
@@ -478,7 +478,7 @@ button, a {
     max-width: 1000px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1240px) {
   .container {
     max-width: 1219px;
   }
