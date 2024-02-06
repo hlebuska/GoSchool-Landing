@@ -594,7 +594,7 @@ body{
                 transform: rotate(-135deg);
             }
         }
-        .email-button:focus{
+        .email-button:focus-visible{
             border: 2px rgb(255, 255, 255) solid;
             outline: 2px rgb(0, 0, 0) solid;     
         }

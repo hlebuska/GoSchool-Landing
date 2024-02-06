@@ -740,7 +740,7 @@ body {
 .contact .contact-inside .email-button img {
   transform: rotate(-135deg);
 }
-.contact .contact-inside .email-button:focus {
+.contact .contact-inside .email-button:focus-visible {
   border: 2px rgb(255, 255, 255) solid;
   outline: 2px rgb(0, 0, 0) solid;
 }
