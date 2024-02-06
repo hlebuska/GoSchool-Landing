@@ -6,6 +6,10 @@ let darkMode = localStorage.getItem('darkMode');
 
 const svgElements = document.querySelectorAll(".vector");
 
+onload = (event) => {
+    switchTheme();
+    switchTheme();
+};
 
 enableDarkMode = () => {
     localStorage.setItem('darkMode', "enabled");
@@ -32,7 +36,9 @@ disableDarkMode = () => {
     darkModeToggle.textContent = "Light theme";
 }
 
-darkModeToggle.addEventListener('click', () => {
+darkModeToggle.addEventListener('click', () => switchTheme());
+
+function switchTheme(){
     darkMode = localStorage.getItem('darkMode');
 
     if(darkMode === "enabled"){
@@ -40,4 +46,4 @@ darkModeToggle.addEventListener('click', () => {
     } else{
         enableDarkMode();
     }
-});
+}
