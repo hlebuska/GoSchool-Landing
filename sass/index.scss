@@ -362,6 +362,247 @@ button, a{
         }
     }
 }
+.expertise{
+    .expertise-inside{
+        .expertise-title{
+
+        }
+        .expertise-list{       
+            display: grid;
+            list-style: none;
+            list-style-position: inside;         
+            .list-element{
+                .list-element-title{
+                    display: flex;
+                    align-items: center;
+
+                    .marker{
+                        height: 4px;
+                        width: 4px;
+                        margin: 8px;
+                        border-radius: 100%;
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+       
+    }
+
+    @include mobile{
+        .expertise-title{
+            @include heading4;
+        }
+        .expertise-list{
+            grid-template-columns: 1fr;
+            grid-row-gap: 32px;
+            margin-top: 14px;
+            .list-element{
+                .list-element-title{
+                    @include heading5;
+                }
+                .list-element-discription{
+                    @include bodyM;
+                    margin-top: 16px;
+                }
+            }
+           
+        }
+    }
+    @include tablet{
+        .expertise-title{
+            @include heading3;
+        }
+        .expertise-list{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 60px;
+            grid-column-gap: 32px;
+            margin-top: 48px;
+            .list-element{
+                .list-element-title{
+                    @include heading4;
+                }
+                .list-element-discription{
+                    @include bodyL;
+                    
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+    @include desktop{
+        .expertise-title{
+            @include heading2;
+        }
+        .expertise-list{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 84px;
+            grid-column-gap: 300px;
+            margin-top: 64px;
+            .list-element{
+                .list-element-title{
+                    @include heading3;
+                }
+                .list-element-discription{
+                    @include bodyXL;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+.design{  
+    background-color: $black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .design-title{
+        text-wrap: nowrap;
+        text-align: center;
+        color: $white;
+    }
+}
+
+.testimonials{
+    .testimonials-inside{
+        display: flex;
+        flex-direction: column;
+        .testimonials-heading{
+            .testimonials-description{
+
+            }
+        }
+
+        @include mobile{
+            .testimonials-heading{
+                .testimonials-title{
+                    @include heading4;
+                    margin: 40px 0;
+                }
+                .testimonials-description{
+                    @include bodyM;
+                }
+            }
+            .author{
+                @include bodyM;
+                font-weight: 700;
+                margin-top: 15px;
+                .author-title{
+                    @include bodyM;
+                    margin-top: 15px;
+                }
+            }
+        }
+        @include tablet{
+            flex-direction: row;
+            align-items: end;
+            .testimonials-heading{
+                .testimonials-title{
+                    @include heading2;
+                }
+                .testimonials-description{
+                    @include bodyXL;
+                    width: 75%;
+                }
+            }
+            .author{
+                @include heading5;
+                font-weight: 700;
+                margin-top: 15px;
+                text-wrap: nowrap;
+                .author-title{
+                    text-wrap: nowrap;
+                    @include bodyL;
+                    margin-top: 15px;
+                }
+            }
+        }
+        @include desktop{
+            .testimonials-heading{
+                .testimonials-title{
+                    @include heading1;
+                }
+                .testimonials-description{
+                    @include heading6;
+                    font-weight: 450;
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+
+.contact{
+    .contact-inside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .lets-talk{
+            
+        }
+        .email-button{
+            color: $white;
+            background-color: $black;
+            text-align: center;
+        }
+    }
+    @include mobile{
+        .lets-talk{
+            @include heading2;
+            margin: 50px 0;
+        }
+        .email-button{
+            @include heading5;
+            border-radius: 144px;
+            width: 262px;
+            height: 76px;
+        }
+    }
+    @include tablet{
+        .lets-talk{
+            @include heading1;
+            margin: 120px 0 35px 0;
+        }
+        .email-button{
+            @include bodyM;
+            border-radius: 81px;
+            width: 148px;
+            height: 52px;
+        }
+    }
+    @include desktop{
+        .lets-talk{
+            @include displayXL;
+            margin: 190px 0 70px 0;
+        }
+        .email-button{
+            @include heading5;
+            border-radius: 144px;
+            width: 262px;
+            height: 92px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    .credits{
+        margin-bottom: 40px;
+    }
+    .socials{
+        display: flex;
+        .instagram, .linkedin{
+            margin-left: 40px;
+        }
+    }
+}
 
 .container{
     padding: 1rem;
@@ -372,14 +613,43 @@ button, a{
     .container{
         max-width: 450px;
     }
+    .design{  
+        height: 100px;
+        .design-title{
+            @include heading2;
+        }
+    }
+    .footer{
+        flex-direction: column;
+    }
 }
 @include tablet{
     .container{
-        max-width: 1000px;
+        max-width: 1100px;
+    }
+    .design{  
+        height: 150px;
+        .design-title{
+            @include displayM
+        }
+    }
+    .footer{
+        flex-direction: row;
+        margin-top: 80px;
     }
 }
 @include desktop{
     .container{
         max-width: 1219px;
+    }
+    .design{  
+        height: 250px;
+        .design-title{
+            @include displayXL
+        }
+    }
+    .footer{
+        flex-direction: row;
+        margin-top: 150px;
     }
 }

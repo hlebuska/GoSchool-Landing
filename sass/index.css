@@ -118,7 +118,7 @@ button, a {
     display: flex;
   }
   .nav .nav-inside .menu .element {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
@@ -156,7 +156,7 @@ button, a {
     letter-spacing: -0.01em;
   }
   .hero .heading .scroll-button {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
@@ -173,14 +173,14 @@ button, a {
   }
   .hero .me .talk .email {
     margin-top: 9px;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
   }
   .hero .me .about {
     width: 60%;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
@@ -216,14 +216,14 @@ button, a {
   }
   .hero .me .talk .email {
     margin-top: 9px;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
   }
   .hero .me .about {
     width: 60%;
-    font-weight: 400;
+    font-weight: 550;
     font-size: 18px;
     line-height: 160%;
     letter-spacing: -0.02em;
@@ -261,14 +261,14 @@ button, a {
   }
   .hero .me .talk .email {
     margin-top: 9px;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
   }
   .hero .me .about {
     width: 60%;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
@@ -310,7 +310,7 @@ button, a {
     grid-column: 1/2;
   }
   .projects .projects-heading .more-button {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
@@ -326,7 +326,7 @@ button, a {
     transform: rotate(-90deg);
   }
   .projects .projects-heading .projects-description {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 171%;
     letter-spacing: -0.01em;
@@ -347,7 +347,7 @@ button, a {
     letter-spacing: -0.01em;
   }
   .projects .projects-grid .projects-card .card-description {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
@@ -381,7 +381,7 @@ button, a {
     transform: rotate(-90deg);
   }
   .projects .projects-heading .projects-description {
-    font-weight: 400;
+    font-weight: 550;
     font-size: 18px;
     line-height: 160%;
     letter-spacing: -0.02em;
@@ -403,7 +403,7 @@ button, a {
     letter-spacing: -0.01em;
   }
   .projects .projects-grid .projects-card .card-description {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
@@ -435,7 +435,7 @@ button, a {
     position: absolute;
   }
   .projects .projects-heading .projects-description {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
@@ -456,11 +456,290 @@ button, a {
     letter-spacing: -0.01em;
   }
   .projects .projects-grid .projects-card .card-description {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.01em;
   }
+}
+
+.expertise .expertise-inside .expertise-list {
+  display: grid;
+  list-style: none;
+  list-style-position: inside;
+}
+.expertise .expertise-inside .expertise-list .list-element .list-element-title {
+  display: flex;
+  align-items: center;
+}
+.expertise .expertise-inside .expertise-list .list-element .list-element-title .marker {
+  height: 4px;
+  width: 4px;
+  margin: 8px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+@media screen and (min-width: 280px) {
+  .expertise .expertise-title {
+    font-weight: 650;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
+    margin-top: 14px;
+  }
+  .expertise .expertise-list .list-element .list-element-title {
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list .list-element .list-element-discription {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .expertise .expertise-title {
+    font-weight: 650;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 32px;
+    margin-top: 48px;
+  }
+  .expertise .expertise-list .list-element .list-element-title {
+    font-weight: 650;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list .list-element .list-element-discription {
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    margin-top: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .expertise .expertise-title {
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 84px;
+    grid-column-gap: 300px;
+    margin-top: 64px;
+  }
+  .expertise .expertise-list .list-element .list-element-title {
+    font-weight: 650;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+  .expertise .expertise-list .list-element .list-element-discription {
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    margin-top: 24px;
+  }
+}
+
+.design {
+  background-color: #000000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.design .design-title {
+  text-wrap: nowrap;
+  text-align: center;
+  color: #ffffff;
+}
+
+.testimonials .testimonials-inside {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 280px) {
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-title {
+    font-weight: 650;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    margin: 40px 0;
+  }
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-description {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+  }
+  .testimonials .testimonials-inside .author {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  .testimonials .testimonials-inside .author .author-title {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonials .testimonials-inside {
+    flex-direction: row;
+    align-items: end;
+  }
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-title {
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-description {
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    width: 75%;
+  }
+  .testimonials .testimonials-inside .author {
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    margin-top: 15px;
+    text-wrap: nowrap;
+  }
+  .testimonials .testimonials-inside .author .author-title {
+    text-wrap: nowrap;
+    font-weight: 550;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-title {
+    font-weight: 650;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+  }
+  .testimonials .testimonials-inside .testimonials-heading .testimonials-description {
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    font-weight: 450;
+    width: 85%;
+  }
+}
+
+.contact .contact-inside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact-inside .email-button {
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+@media screen and (min-width: 280px) {
+  .contact .lets-talk {
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin: 50px 0;
+  }
+  .contact .email-button {
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    border-radius: 144px;
+    width: 262px;
+    height: 76px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact .lets-talk {
+    font-weight: 650;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    margin: 120px 0 35px 0;
+  }
+  .contact .email-button {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.01em;
+    border-radius: 81px;
+    width: 148px;
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact .lets-talk {
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    margin: 190px 0 70px 0;
+  }
+  .contact .email-button {
+    font-weight: 650;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    border-radius: 144px;
+    width: 262px;
+    height: 92px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .credits {
+  margin-bottom: 40px;
+}
+.footer .socials {
+  display: flex;
+}
+.footer .socials .instagram, .footer .socials .linkedin {
+  margin-left: 40px;
 }
 
 .container {
@@ -472,14 +751,52 @@ button, a {
   .container {
     max-width: 450px;
   }
+  .design {
+    height: 100px;
+  }
+  .design .design-title {
+    font-weight: 650;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 1000px;
+    max-width: 1100px;
+  }
+  .design {
+    height: 150px;
+  }
+  .design .design-title {
+    font-weight: 650;
+    font-size: 84px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+  }
+  .footer {
+    flex-direction: row;
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 1240px) {
   .container {
     max-width: 1219px;
+  }
+  .design {
+    height: 250px;
+  }
+  .design .design-title {
+    font-weight: 500;
+    font-size: 140px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+  }
+  .footer {
+    flex-direction: row;
+    margin-top: 150px;
   }
 }/*# sourceMappingURL=index.css.map */
