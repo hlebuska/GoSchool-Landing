@@ -21,7 +21,7 @@ enableDarkMode = () => {
 
     svgElements.forEach((el) => {el.classList.add('svg-white')});
 
-    darkModeToggle.textContent = "Dark theme";
+    darkModeToggle.textContent = "Темная тема";
 }
 
 disableDarkMode = () => {
@@ -33,7 +33,7 @@ disableDarkMode = () => {
     root.style.setProperty('--alt-background', '#000000');
 
     svgElements.forEach((el) => {el.classList.remove('svg-white')});
-    darkModeToggle.textContent = "Light theme";
+    darkModeToggle.textContent = "Светлая тема";
 }
 
 darkModeToggle.addEventListener('click', () => switchTheme());

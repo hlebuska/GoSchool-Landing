@@ -1,122 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/index.css">
-    <script defer src="scroll-animation.js"></script>
-    <script async src="theme.js"></script>
-    <title>Joey - Portfolio Website</title>
-</head>
-<body>
-   <div class="nav">
-        <div class="nav-inside container">
-            <a class="logo vector"><img src="images/logo-main-mobile.svg" alt=""></a>
-            <button class="menu-button"><img src="images/mav-menu-button.svg" alt=""></button>
-            <div class="menu">
-                <a href="#hero" class="element selected">Home</a>
-                <a href="#projects" class="element">Projects</a>
-                <a href="#expertise" class="element">About</a>
-                <a href="#contact" class="element last">Contact</a> 
-                <a class="element last" id="dark-theme-btn">Light theme</a> 
-            </div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Go School</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav-inside container">
+        <a class="logo vector"
+          ><img src="images/logo-main-mobile.svg" alt=""
+        /></a>
+        <button class="menu-button">
+          <img src="./images/Hamburger_icon_white.svg" alt="" class="svg-white"/>
+        </button>
+        <div class="menu menu-hidden hidden">
+          <a href="#hero" class="element selected">Главная</a>
+          <a href="#expertise" class="element">О нас</a>
+          <a href="#projects" class="element">Учителя</a>
+          <a href="#contact" class="element last">Контакты</a>
+          <a class="element last" id="dark-theme-btn">Light theme</a>
         </div>
-   </div>
-   <div class="hero" id="hero">
-        <div class="hero-inside container hidden">
-            <div class="heading">
-                <div class="title">Websites&<br>Branding</div>
-                <a href="#email-button" class="scroll-button">SCROLL DOWN <img class="svg-white" src="images/icon-arrow.svg" alt=""></a>
-            </div>
-            <div class="me">
-                <div class="talk">
-                    <div class="me-heading">Let’s Talk</div>
-                    <div class="email">hello@joey.co</div>
-                </div>
-                <div class="about">Hey there, I'm Joey, a digital product designer specializing in branding, marketing, and no-code tools.</div>
-            </div>
+      </div>
+    </div>
+    <div class="hero" id="hero">
+      <div class="hero-inside container hidden">
+        <div class="heading">
+          <div class="title">Курсы по подготовке к<br />IELTS TOEFL SAT</div>
+          <a href="#email-button" class="scroll-button"
+            >ПОДРОБНЕЕ
+            <img class="svg-white" src="images/icon-arrow.svg" alt=""
+          /></a>
         </div>
-   </div>
-   <div class="projects" id="projects">
-        <div class="projects-inside container hidden">
-            <div class="projects-heading">
-                <div class="projects-title">Projects</div>
-                <button class="more-button">More<img class="vector" src="images/icon-arrow.svg" alt=""></button>
-                <div class="projects-description">As an experienced developer of modern, intuitive websites and digital products, I want to help you build the brand of your dreams.</div>
+        <div class="me">
+          <div class="talk">
+            <div class="me-heading">Свяжитесь с нами!</div>
+            <div class="email">goschool@gmail.com</div>
+          </div>
+          <div class="about">
+            Подготовка к поступлению в топовые вузы США, Великобритании, Канады и Сингапура.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tests">
+      <div class="tests__inside container hidden">
+        <button class="tests__test tests__test--ielts modal-button">IELTS</button>
+        <button class="tests__test tests__test--toefl modal-button">TOEFL</button>
+        <button class="tests__test tests__test--sat modal-button">SAT</button>
+      </div>
+    </div>
+    <div class="expertise" id="expertise">
+      <div class="expertise-inside container hidden">
+        <div class="expertise-title">Почему стоит готовиться с Go School?</div>
+        <ul class="expertise-list">
+          <li class="list-element hidden">
+            <div class="list-element-title">
+              <div class="marker"></div>
+              Эффективная методика
             </div>
-            <div class="projects-grid">
-                <a href="" class="projects-card">
-                    <img src="images/Card - Element-desktop.png" alt="">
-                    <div class="card-title">Crtly<div class="card-description">Mobile App</div></div>       
-                </a>
-                <a href="" class="projects-card">
-                    <img src="images/Card - Element-desktop (1).png" alt="">
-                    <div class="card-title">Tansto<div class="card-description">Web Design</div></div>  
-                </a>
-                <a href="" class="projects-card">
-                    <img src="images/Card - Element-desktop (2).png" alt="">
-                    <div class="card-title">Senta<div class="card-description">Mobile App & Branding</div></div>        
-                </a>
-                <a href="" class="projects-card">
-                    <img src="images/Card - Element-desktop (3).png" alt="">
-                    <div class="card-title">Crint<div class="card-description">Mobile App</div></div>                   
-                </a>
+            <div class="list-element-discription">
+              Наша уникальная программа подготовки предоставляет доступ к проверенным ресурсам, которые гарантируют эффективное обучение. Наши ресурсы охватывают все необходимые аспекты экзаменов и помогают студентам достичь высоких результатов.
             </div>
-            
-        </div>
-   </div>
-   <div class="expertise" id="expertise">
-        <div class="expertise-inside container hidden">
-            <div class="expertise-title">Expertise</div>
-            <ul class="expertise-list">
-                <li class="list-element">
-                    <div class="list-element-title"><div class="marker"></div>Branding</div>
-                    <div class="list-element-discription">I work with you to craft a meaningful brand experience for your new business. I cover the entire brand research and design experience to create an eye-catching, timeless logo design.</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-element-title"><div class="marker"></div>UI Design</div>
-                    <div class="list-element-discription">I build manageable, responsive, interactive websites. No templates. No slow, complicated code. Webflow is at the core of my website development strategy. I use it to deliver secure, high-quality custom websites.</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-element-title"><div class="marker"></div>UX Design</div>
-                    <div class="list-element-discription">I understand and solve digital product problems with a user-centered approach. Research, empathy, and visual communication are some of the tools that I use to delight and engage your users and meet your business needs.</div>
-                </li>
-                <li class="list-element">
-                    <div class="list-element-title"><div class="marker"></div>Development</div>
-                    <div class="list-element-discription">I build manageable, responsive, interactive websites. No templates. No slow, complicated code. Webflow is at the core of my website development strategy. I use it to deliver secure, high-quality custom websites.</div>
-                </li>
-            </ul>
-        </div>
-   </div>
-   <div class="design">
-        <div class="design-title">Visual design for digital experiences</div>
-   </div>
-   <div class="testimonials">
-        <div class="testimonials-inside container hidden">
-            <div class="testimonials-heading">
-                <div class="testimonials-title">Testimonials</div>
-                <div class="testimonials-description">“Joey is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I've witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”</div>
+          </li>
+          <li class="list-element hidden">
+            <div class="list-element-title">
+              <div class="marker"></div>
+              Индивидуальный подход
             </div>
-            <div class="author">Chris Ellington
-                <div class="author-title">Product Lead,Gatha.</div>
+            <div class="list-element-discription">
+              Наши уроки проводятся в формате 1 на 1, где каждый ребенок работает индивидуально с опытным преподавателем. Этот подход позволяет детям гибко управлять своим расписанием занятий, подстраивая его под свои потребности и обстоятельства.
             </div>
+          </li>
+          <li class="list-element hidden">
+            <div class="list-element-title">
+              <div class="marker"></div>
+              Гарантия результата
+            </div>
+            <div class="list-element-discription">
+              Наша компания обещает уверенность в достижении желаемого результата на экзаменах IELTS, TOEFL и SAT благодаря высококвалифицированным преподавателям, персональной адаптации учебной программы и постоянной поддержке студентов на каждом этапе подготовки.
+            </div>
+          </li>
+          <li class="list-element hidden">
+            <div class="list-element-title">
+              <div class="marker"></div>
+              Многогранный подход
+            </div>
+            <div class="list-element-discription">
+              Мы осуществляем комплексный подход к изучению английского языка, включая бизнес, повседневную жизнь и академические навыки, чтобы подготовить вас к успешному общению в любой сфере деятельности и обучению.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <div class="projects-inside container hidden">
+        <div class="projects-heading">
+          <div class="projects-title">Наши преподаватели</div>
+          <button class="more-button modal-button">
+            Подробнее<img class="vector" src="images/icon-arrow.svg" alt="" />
+          </button>
+          <div class="projects-description">        
+Наши курсы ведут высококвалифицированные преподаватели с многолетним опытом в образовании.
+          </div>
         </div>
-   </div>
-   <div class="contact" id="contact">
-        <div class="contact-inside container hidden">
-            <div class="lets-talk">Let’s talk!</div>
-            <button id="email-button" class="email-button">hello@joey.co <img class="svg-white" src="images/icon-arrow.svg" alt=""></button>
+        <div class="projects-grid">
+          <div class="projects-card hidden">
+            <div class="card-top">
+              <img src="./images/tina.jpg" alt="Ekaterina" class="projects-img"/>
+              <div class="card-title">
+                Ekaterina 
+                <img src="./images/Flag_of_Kazakhstan.svg" alt="Казахстан" class="country-icon">
+                <div class="card-description">Сертифицированный преподаватель делового английского, разговорного...</div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p class="card-text">Обучаю онлайн начиная с А1 до подготовки к IELTS!
+                Я говорю на 3 языках: Русский, Английский и Турецкий, так же изучаю арабский и корейский начальные уровни.</p>
+              <button class="sign-up modal-button">Записаться</button>
+            </div>
+          </div>
+          <div class="projects-card hidden">
+            <div class="card-top">
+              <img src="./images/black-lady.jpg" alt="Jada" class="projects-img"/>
+              <div class="card-title">
+                Jada 
+                <img src="./images/Flag_of_the_United_States.svg" alt="Казахстан" class="country-icon">
+                <div class="card-description">Профессиональный учитель с опытом преподавания 3 года.</div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p class="card-text">Являюсь сертифицированным репетитором по подготовке к сертификату TOEFL. Выпускница Columbia University по профессии преподавателя</p>
+              <button class="sign-up modal-button">Записаться</button>
+            </div>
+          </div>
+          <div class="projects-card hidden">
+            <div class="card-top">
+              <img src="./images/sabina.jpg" alt="Sabina" class="projects-img"/>
+              <div class="card-title">
+                Sabina 
+                <img src="./images/Flag_of_Kazakhstan.svg" alt="Казахстан" class="country-icon">
+                <div class="card-description">Сертифицированный преподаватель английского языка для подготовки к вступительным...</div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p class="card-text">Занимаюсь подготовкой к тестам необходимых для поступления в Америкнские вузы. SAT: 1530, TOEFL - 112.</p>
+              <button class="sign-up modal-button">Записаться</button>
+            </div>
+          </div>
+          <div class="projects-card hidden">
+            <div class="card-top">
+              <img src="./images/man.jpg" alt="Guo" class="projects-img"/>
+              <div class="card-title">
+                Guo 
+                <img src="./images/Flag_of_the_United_Kingdom.svg" alt="Казахстан" class="country-icon">
+                <div class="card-description">Преподаватель продвинутого английского, академического...</div>
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p class="card-text">Обучаю онлайн и очно на продвинутых уровнях B1-C2 и занимаюсь подготовкой к языковых экзаменам TOEFL и IELTS</p>
+              <button class="sign-up modal-button">Записаться</button>
+            </div>
+          </div>
         </div>
-   </div>
-   <div class="footer ">
-        <div class="footer-inside container">
-            <a href class="credits">2023 © — Made by Djectstudio</a>
-            <div class="socials">
-                <a href="" class="dribble">Dribble</a>
-                <a href="" class="instagram">Instagram</a>
-                <a href="" class="linkedin">LinkedIn</a>
-             </div>
+      </div>
+    </div>
+    <div class="design">
+      <div class="design-title">IELTS TOEFL SAT GOSCHOOL IELTS TOEFL SAT GOSCHOOL</div>
+    </div>
+    <div class="testimonials">
+      <div class="testimonials-inside container hidden">
+        <div class="testimonials-heading hidden">
+          <div class="testimonials-title">GoSchool</div>
+          <div class="testimonials-description">
+            “Школа подготовки к тестам на английском языке GoSchool выделяется своим превосходством благодаря инновационным методикам обучения и персонализированному подходу к каждому студенту, что позволяет достигать выдающихся результатов на экзаменах.”
+          </div>
         </div>
-   </div>
-</body>
+        <div class="author">
+          Крисс Элингтон
+          <div class="author-title">Основатель школы</div>
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="contact-inside container hidden">
+        <div class="lets-talk">Записаться!</div>
+        <button id="email-button" class="email-button modal-button">
+           goschool@gmail.com
+          <img class="svg-white" src="images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-inside container">
+        <a href="#" class="credits">2023 © — Made by Djectstudio</a>
+        <div class="socials">
+          <a href="#" class="dribble">Whatsapp</a>
+          <a href="#" class="instagram">Instagram</a>
+          <a href="#" class="linkedin">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <dialog class="modal">
+      <div class="modal-inside container">
+        <h3 class="modal-title">Записаться на занятие</h3>
+        <p class="modal-subtitle">получите высшие баллы на экзаменах!</p>
+        <form action="/" class="modal-form" method="dialog">
+          <label for="name" class="modal-label">Ваше имя</label>
+          <input type="text" name="name" id="name" class="modal-input" placeholder="Ваше имя">
+          <label for="name" class="modal-label">Ваш телефон</label>
+          <input type="tel" name="phone" id="phone" class="modal-input" placeholder="+7 (999)-99-99">
+          <input type="submit" value="Записаться" class="modal-input modal-submit">
+        </form>
+      </div>
+    </dialog>
+    <script defer src="./scripts/scroll-animation.js"></script>
+    <script async src="./scripts/theme.js"></script>
+    <script src="./scripts/menu-button.js"></script>
+    <script src="./scripts/modal-button.js"></script>
+  </body>
 </html>
