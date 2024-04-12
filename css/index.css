@@ -786,6 +786,7 @@ body {
 .design {
   background-color: var(--alt-background);
   overflow: hidden;
+  white-space: nowrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
