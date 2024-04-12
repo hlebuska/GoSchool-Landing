@@ -508,6 +508,7 @@ body {
     letter-spacing: -0.02em;
     color: var(--alt-text);
     text-align: center;
+    text-align: -webkit-center;
   }
   .tests__test--ielts {
     background: linear-gradient(136deg, #b8e023, #8fef41);
@@ -523,7 +524,7 @@ body {
     .tests__inside{
         padding: 16px 16px;
         .tests__test{
-            font-size: 30px;
+            font-size: 28px;
             padding: 8px 16px;
         }
     } 
